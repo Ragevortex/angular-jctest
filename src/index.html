@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Angular Getting Started</title>
+    <title>Home Items Inventory</title>
     <base href="/" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,6 +14,30 @@
   </head>
   <body>
     <app-root></app-root>
+    <!--- firebase stuff -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD7kARiNysf2vexPICEocxkA-xFjktDrS4",
+    authDomain: "home-inventory-50597.firebaseapp.com",
+    databaseURL: "https://home-inventory-50597.firebaseio.com",
+    projectId: "home-inventory-50597",
+    storageBucket: "home-inventory-50597.appspot.com",
+    messagingSenderId: "423180410270",
+    appId: "1:423180410270:web:e28889840614be6cba0a8f",
+    measurementId: "G-EBSV9XFEES"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </body>
 </html>
 

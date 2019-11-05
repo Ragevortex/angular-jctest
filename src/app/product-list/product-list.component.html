@@ -1,5 +1,36 @@
 <h2>Products</h2>
 
+<div *ngFor="let product of products">
+<table width="100%">
+  <tr width="100%">
+    <td> <img [src]="product.image" width="90px" height="auto"/></td>
+    <td> <h3>
+    <a [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
+  </h3>
+   <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+  </td>
+  <td>
+<button (click)="share()" style="float:right!important;">
+  Share
+</button>
+
+<app-product-alerts
+  [product]="product" 
+  (notify)="onNotify()">
+</app-product-alerts>
+
+  </td>
+  </tr>
+</table>
+ 
+
+ 
+
+</div>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
