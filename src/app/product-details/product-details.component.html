@@ -1,8 +1,10 @@
+<div class="detalle">
 <h2>Product Detail</h2>
-<div *ngIf="product">
- <img [src]="product.image" width="90px" height="auto"/>
+<div *ngIf="product" style="">
+ <img [src]="product.image" width="80%" height="auto"/>
   <h3>{{ product.name }}</h3>
-  <h4>{{ product.price | currency }}</h4>
+  <h4>Price: {{ product.price | currency }}</h4>
   <p>{{ product.description }}</p>
+</div>
 </div>
 
