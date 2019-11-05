@@ -5,7 +5,7 @@
   <tr width="100%">
     <td> <img [src]="product.image" width="90px" height="auto"/></td>
     <td> <h3>
-    <a [title]="product.name + ' details'">
+    <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
       {{ product.name }}
     </a>
   </h3>
