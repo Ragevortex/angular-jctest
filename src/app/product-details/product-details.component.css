@@ -1,7 +1,14 @@
 .detalle{
-text-align:center!important;
-margin-right:auto;
-margin-left:auto;
-width:100%!important;
 
+    position: relative;
+    text-align: center!important;
+    /*min-width: 100%!important; */
+    margin: 10px 50% 0px 40%; /*top right bottom left*/
+    width: 100%!important;
+    min-width:250px;
+    max-width:250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 5px;
+    top: 10px;
 }
